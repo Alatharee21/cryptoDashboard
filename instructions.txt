@@ -1,15 +1,18 @@
-# Crypto Dashboard static UI build plan
+<nav class="navList">
+      <a class="navItem active" href="#">Overview</a>
+      <a class="navItem" href="#">Portfolio</a>
+      <a class="navItem" href="#">Transactions</a>
+      <a class="navItem" href="#">Settings</a>
+    </nav>
+    <div class="profileCard">
+      <div class="avatar"></div>
+      <div class="address">0x12...ABCD</div>
+    </div>
+    
+    # Crypto Dashboard static UI build plan
 
 Nice choice. A crypto dashboard is perfect for showing clean layout skills and Web3 design knowledge while using only HTML and CSS. Below is a focused, step by step plan you can follow to build a professional portfolio piece.
 
-1. project setup
-
-1) Create a folder named `crypto_dashboard`
-2) Add files
-   • `index.html`
-   • `styles.css`
-   • `assets/` with `images/` and `icons/`
-3) Optional starter branch on GitHub for demo and hosting via GitHub Pages
 
 2. design and wireframe first
 
@@ -27,75 +30,6 @@ Nice choice. A crypto dashboard is perfect for showing clean layout skills and W
 
 3. html structure and semantic layout
    Use semantic tags and clear class names. Example skeleton
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Crypto Dashboard</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <aside class="sidebar">
-    <div class="brand">MyCrypto</div>
-    <nav class="navList">
-      <a class="navItem active" href="#">Overview</a>
-      <a class="navItem" href="#">Portfolio</a>
-      <a class="navItem" href="#">Transactions</a>
-      <a class="navItem" href="#">Settings</a>
-    </nav>
-    <div class="profileCard">
-      <div class="avatar"></div>
-      <div class="address">0x12...ABCD</div>
-    </div>
-  </aside>
-
-  <main class="mainContent">
-    <header class="topBar">
-      <div class="searchBox">Search token</div>
-      <button class="connectButton">Connect Wallet</button>
-    </header>
-
-    <section class="overview">
-      <article class="card balanceCard">
-        <h3>Total portfolio</h3>
-        <p class="amount">5.42 ETH</p>
-        <p class="usd">≈ $8,412</p>
-      </article>
-      <article class="card changeCard">
-        <h4>24h Change</h4>
-        <p class="change">+2.8%</p>
-      </article>
-      <article class="card quickActions">
-        <button>Send</button>
-        <button>Receive</button>
-        <button>Swap</button>
-      </article>
-    </section>
-
-    <section class="details">
-      <div class="portfolioGrid">
-        <!-- token cards -->
-      </div>
-
-      <div class="transactions">
-        <h4>Recent transactions</h4>
-        <table class="txTable">
-          <thead>
-            <tr><th>Type</th><th>Token</th><th>Amount</th><th>Status</th></tr>
-          </thead>
-          <tbody>
-            <!-- rows -->
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
-```
 
 4. css approach and key techniques
 
